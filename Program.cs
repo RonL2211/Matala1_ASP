@@ -26,6 +26,7 @@ namespace Matala1_ASP
 
             app.UseAuthorization();
 
+            app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 
             app.MapControllers();
 
