@@ -437,24 +437,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ronla\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\bambo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ronla\\source\\repos\\Matala1_ASP\\Matala1_ASP.csproj",
+      "projectUniqueName": "C:\\Users\\bambo\\OneDrive\\מסמכים\\GitHub\\Matala1_ASP\\Matala1_ASP.csproj",
       "projectName": "Matala1_ASP",
-      "projectPath": "C:\\Users\\ronla\\source\\repos\\Matala1_ASP\\Matala1_ASP.csproj",
-      "packagesPath": "C:\\Users\\ronla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ronla\\source\\repos\\Matala1_ASP\\obj\\",
+      "projectPath": "C:\\Users\\bambo\\OneDrive\\מסמכים\\GitHub\\Matala1_ASP\\Matala1_ASP.csproj",
+      "packagesPath": "C:\\Users\\bambo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bambo\\OneDrive\\מסמכים\\GitHub\\Matala1_ASP\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ronla\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\bambo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -479,9 +474,8 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+        "auditMode": "direct"
+      }
     },
     "frameworks": {
       "net6.0": {
@@ -511,7 +505,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }
