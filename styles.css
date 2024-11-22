@@ -1,4 +1,4 @@
-/* סגנון בסיסי לעמוד */
+/* Basic styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,7 +8,7 @@ body {
     line-height: 1.6;
 }
 
-/* כותרת עליונה */
+/* Header styles */
 header {
     background-color: #333;
     color: #fff;
@@ -16,40 +16,32 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 1.8rem;
-}
+    header h1 {
+        margin: 0;
+        font-size: 1.8rem;
+    }
 
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 1rem;
-}
+    header nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+    }
 
-header nav ul li {
-    display: inline;
-}
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-}
+            header nav ul li a:hover {
+                text-decoration: underline;
+            }
 
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* עיצוב רשימת הסרטים */
+/* Movie container */
 #movies-container, #wishlist-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -57,114 +49,43 @@ header nav ul li a:hover {
     padding: 2rem;
 }
 
+/* Movie card */
 .movie {
     background-color: #fff;
-    border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: 0.3s;
 }
 
-.movie:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.movie img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 1rem;
-}
-
-.movie h3 {
-    margin-top: 0;
-    font-size: 1.2rem;
-    color: #007BFF;
-}
-
-.movie h3:hover {
-    text-decoration: underline;
-}
-
-.movie p {
-    margin: 0.5rem 0;
-    font-size: 0.9rem;
-    color: #555;
-}
-
-/* כפתור */
-.movie button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.2s ease-in-out;
-}
-
-.movie button:hover {
-    background-color: #0056b3;
-}
-
-/* כותרת של עמודי המשאלות */
-h2 {
-    text-align: center;
-    margin: 2rem 0 1rem 0;
-    font-size: 1.8rem;
-    color: #333;
-}
-
-/* הודעת ריק */
-#wishlist-container p {
-    text-align: center;
-    color: #888;
-    font-style: italic;
-    font-size: 1.1rem;
-}
-
-/* רספונסיביות */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
+    .movie:hover {
+        transform: scale(1.05);
     }
 
-    header h1 {
+    .movie img {
+        max-width: 100%;
+        border-radius: 5px;
         margin-bottom: 1rem;
     }
 
-    #movies-container, #wishlist-container {
-        grid-template-columns: 1fr;
-    }
+/* Button styles */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-@media (max-width: 480px) {
-    header {
-        padding: 1rem;
+    button:hover {
+        background-color: #0056b3;
     }
 
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    header nav ul li a {
-        font-size: 0.9rem;
-    }
-
-    .movie {
-        padding: 0.8rem;
-    }
-
-    .movie h3 {
-        font-size: 1rem;
-    }
-
-    .movie button {
-        font-size: 0.9rem;
+/* Responsive Design */
+@media (max-width: 768px) {
+    #movies-container, #wishlist-container {
+        grid-template-columns: 1fr;
     }
 }

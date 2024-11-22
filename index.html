@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie App</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    
-    <script type="module" src="js/app.js"></script>
-
+    <script defer type="module" src="js/app.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Movie App</h1>
         <nav>
-            <ul id="menu"></ul>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wishlist.html">Wish List</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -23,6 +23,5 @@
             <div id="movies-container"></div>
         </section>
     </main>
-   
 </body>
 </html>

@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     async function fetchAndRenderCast() {
         try {
             const response = await fetch("https://localhost:7171/api/Cast");
+            if (!response.ok) throw new Error("Network response was not ok");
             const castMembers = await response.json();
             renderCast(castMembers);
         } catch (error) {
@@ -52,7 +53,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 castForm.reset(); // Clear form
                 await fetchAndRenderCast(); // Refresh the list
             } else {
-                alert("Failed to add cast member. Please try again.");
+                const errorData = await response.json();
+                alert(`Failed to add cast member: ${errorData.message}`);
             }
         } catch (error) {
             console.error("Failed to add cast member:", error);

@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wish List</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="js/wishlist.js"></script>
+    <script defer src="js/wishlist.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Wish List</h1>
         <nav>
-            <ul id="menu"></ul>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wishlist.html">Wish List</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <section id="wishlist">
             <h2>Your Wish List</h2>
-            <div id="wishlist-container"></div>
+            <div id="wishlist-container">
+                <p>No items in your wishlist yet.</p>
+            </div>
         </section>
     </main>
-    
-    <script src="wishlist.js"></script>
 </body>
 </html>
